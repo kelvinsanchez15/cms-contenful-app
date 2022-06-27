@@ -3,11 +3,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "preexport": "npm run build",
     "export": "next export",
-    "prestart": "npm run export",
-    "start": "serve out",
-    "setup": "node ./contentful/setup.js $CONTENTFUL_SPACE_ID $CONTENTFUL_MANAGEMENT_TOKEN"
+    "build-export": "next build && next export"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.4.0",
